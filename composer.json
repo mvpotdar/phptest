@@ -1,0 +1,22 @@
+{
+    "name": "perennial/testdemo",
+    "description": "Demo for PHP TEST CASES",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Azhar Laskar",
+            "email": "azharuddin.laskar@perennialsys.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Consumers\\" : "Consumers/",
+            "Services\\" : "Services/",
+            "Interfaces\\" : "Interfaces/",
+            "Tests\\" : "Tests"
+        }
+    }
+}
