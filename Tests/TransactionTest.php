@@ -23,11 +23,11 @@
             $this->mock_ledger
                 ->expects($this->any())
                 ->method('get_data')
-                ->willReturn("TEST TRANSACTION");
+                ->willReturn("TEST TRANSACTION1");
 
             $transaction_obj = new Transactions($this->mock_ledger);
 
-            $this->assertEquals("TEST TRANSACTION", $transaction_obj->get_transactions());
+            $this->assertEquals("TEST TRANSACTION1", $transaction_obj->get_transactions());
         }
 
         public function testTransactionGetFailure()
