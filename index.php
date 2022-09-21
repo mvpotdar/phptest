@@ -12,7 +12,7 @@
 
         echo $transaction_obj->get_transactions();
     
-        $transaction_obj->put_transactions("TRANSACTION NEW DATA");
+        $transaction_obj->put_transactions("TRANSACTION TEST DATA");
     
         echo $transaction_obj->get_transactions();
 
