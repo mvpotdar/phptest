@@ -13,6 +13,7 @@
         echo $transaction_obj->get_transactions();
     
         $transaction_obj->put_transactions("TRANSACTION NEW DATA");
+        echo "First Commit";
     
         echo $transaction_obj->get_transactions();
 
